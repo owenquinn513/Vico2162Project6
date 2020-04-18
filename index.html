@@ -1,7 +1,7 @@
 <!Doctype html>
 <html lang="en">
     <head>
-        <title> Project 6 Forms</title>
+        <title> Project 7 Navigation</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
@@ -13,59 +13,73 @@
     
     
 <body>
-    <h1> 
-            Project 6
-    </h1>
-    <p> Simple forms to collect name, email address, phone number, and a text block to describe project, dropdown list for urgency, and a radio button for business/personal</p>
     
-    <p> References: <br>
-    <a href="https://getbootstrap.com/docs/4.4/components/forms/">Bootstrap Form Documentation</a><br>
-    <a href="https://www.w3schools.com/html/html_forms.asp"> W3Schools Documentation</a>
-    </p>
     
-    <form action="https://formspree.io/xyydzbey" method="POST">
-        <div class="form-group">
-            <label for="name">First and Last Name:</label>
-            <input type="text" id="name" name="name" class="form-control">
+    <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Owen Quinn Portfolio</h5>
+    <p class="card-text">Graphic Design and Illustration</p>
+  
+  </div>
+</div>
+    <body>
+
+        <div class="row m-3">
+           
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/JackD%20Up%20Halloween%20white.jpg"alt="Jack'd Up" 
+                    class="img-fluid"/> 
+                </div>
+                <div class="col-md-8 col-lg-4">
+                    <img src="images/JackD%20Up%20SPloosh%20final.jpg"alt="Jack'd Up" 
+                    class="img-fluid"/> 
+                </div>
+                <div class="col-md-8 col-lg-4">
+                    <img src="images/Handy%20Source%20Logo.jpg"alt="Jack'd Up" 
+                    class="img-fluid"/> 
+                </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" class="form-control">
+        <div class="row m-3">
+           
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/perspective%20guy%202.jpg"alt="Killer Illustration" 
+                    class="img-fluid"/> 
+                </div>
+                <div class="col-md-8 col-lg-4">
+                    <img src="images/perspective%20guy%203.jpg"alt="Killer Illustration" 
+                    class="img-fluid"/> 
+                </div>
+                <div class="col-md-8 col-lg-4">
+                    <img src="images/perspective%20guy.jpg"alt="Killer Illustration" 
+                    class="img-fluid"/> 
+                </div>
         </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control">
+         <div class="row m-3">
+           
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/Quinn_ArtDirectionProject.jpg"alt="Whiskey Magazine" 
+                    class="img-fluid"/> 
+                </div>
+                <div class="col-md-8 col-lg-8">
+                    <img src="images/Quinn_ArtDirectionProject%20spread.jpg"alt="Whiskey Magazine" 
+                    class="img-fluid"/> 
+                </div>
+
         </div>
-        <div class="form-group">
-            <p class="label"> Select urgency of project</p>
-            <select name="urgency" class="form-control">
-                <option value="now">Urgent</option>
-                <option value="asap">Important</option>
-                <option value="normal" selected>Needs Done</option>
-                <option value="low">Just Thinking</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <p class="label"> Select type of organization</p>
-            <input type="radio" id="business" name="organization" value="business" class="form-control">
-                <label for="business">Business</label><br>
-            <input type="radio" id="personal" name="organization" value="personal" class="form-control">
-                <label for="personal">Personal</label><br>
-            <input type="radio" id="other" name="organization" value="other" class="form-control">
-                <label for="other">Other</label><br>
-        </div>
-        <div class="form-group">
-            <textarea name="description" rows="10" cols="80" class="form-control">
-                Enter description of your project
-            </textarea>
-        </div>
-     <input type="submit" value="Send">
-    
-    
-    
-    
-    </form>
-    
+                   
     
     
     
